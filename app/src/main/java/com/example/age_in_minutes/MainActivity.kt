@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
                 selmonth,
                 seldayOfMonth ->
             Toast.makeText(this, "The chosen year $selyear, " +
-                    "the chosen month $selmonth, the day is $seldayOfMonth ",
+                    "the chosen month ${selmonth+1}, the day is $seldayOfMonth ",
                 Toast.LENGTH_LONG).show()
             val selectedDate = "$seldayOfMonth/${selmonth+1}/$selyear"
             tvSelectedDate.setText(selectedDate)
